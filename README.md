@@ -1,4 +1,4 @@
-# Ether.Fi Test Project
+# Test Project
 ## Pre-Requisites
 
 - Install Foundry (https://github.com/foundry-rs/foundry)
