@@ -233,8 +233,6 @@ contract PoolTest is Test {
         // quotes min amount out for swap
         uint256[] memory prices = IUniRouter(_router).getAmountsOut(_amountIn, _path);
 
-        // If we were not using fuzzing and wanted a realistic trade, add this line of code to prevent losing too much value on trade
-        // require(_amountIn * 8500 / 10000 <= prices[1], "SWAP: Trade slippage above 15%");
         
         // approve router to swap tokens
         IERC20(tokenIn).approve(_router, _amountIn);
